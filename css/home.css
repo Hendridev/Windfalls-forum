@@ -1,0 +1,264 @@
+header {
+    width: 100%;
+    height: 60px;
+    background-color: whitesmoke;
+    padding: 5px 0;
+    box-sizing: border-box;
+    z-index: 100;
+    position: fixed;
+}
+
+.float-left {
+    float: left;
+}
+
+.clearBoth {
+    clear: both;
+}
+
+.container {
+    padding: 0 25px;
+}
+
+.setup {
+    display: inline-block;
+}
+
+.user_avatar {
+    height: 50px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    background-color: rgb(238, 238, 238);
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.user-content {
+    display: flex;
+    align-items: center;
+    font-family: var(--font-viga);
+    width: 250px;
+}
+
+.user-content span {
+    position: absolute;
+    left: 90px;
+}
+
+.user-content img {
+    display: block;
+    width: 35px;
+    height: 35px;
+    border: .1px solid rgb(238, 238, 238);
+    background-size: cover;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 40px;
+}
+
+.user-content .on {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background-color: rgb(0, 187, 131);
+    left: 20px;
+    border-radius: 50%;
+    margin-right: 50px;
+}
+
+.navigation {
+    height: 50px;
+    margin-left: 150px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 25px;
+}
+
+.navigation a {
+    color: grey;
+    list-style: none;
+}
+
+.navigation a:active {
+    color: rgb(255, 255, 255);
+}
+
+.dark_mode {
+    width: 70px;
+    height: 34px;
+    margin-top: 10px;
+    margin-left: 250px;
+    background-color: rgb(185, 187, 187);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 3px;
+    box-sizing: border-box;
+}
+
+.light {
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.light-toggle {
+    justify-content: flex-end;
+    background-color: rgb(35, 116, 236);
+}
+
+
+/* header end */
+
+.banner {
+    display: grid;
+    grid-template-areas: "suggest beranda notif";
+    grid-template-columns: 300px auto 300px;
+}
+
+.suggest {
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    margin-top: 60px;
+    background-color: rgb(248, 248, 248);
+}
+
+.beranda {
+    margin-top: 60px;
+    grid-area: beranda;
+    background-color: rgb(248, 248, 248);
+    position: relative;
+    padding: 20px;
+}
+
+.notif {
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    margin-top: 60px;
+    right: 0;
+    background-color: rgb(248, 248, 248);
+}
+
+.posting {
+    background-color: whitesmoke;
+    width: 100%;
+    height: 120px;
+    padding: 5px 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.posting textarea {
+    margin-top: 5px;
+    padding: 4px;
+    box-sizing: border-box;
+    height: 60px;
+    width: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+    font-family: var(--font-viga);
+    background-color: whitesmoke;
+    border-bottom: 1px solid grey;
+}
+
+.file {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.posting label {
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2px;
+    font-size: 20px;
+}
+
+label.myLabel input[type="file"] {
+    position: absolute;
+    display: none;
+}
+
+.myLabel:hover {
+    background: rgb(211, 207, 207);
+}
+
+.myLabel :valid+span {
+    color: rgb(17, 163, 248);
+}
+
+.file button {
+    border: none;
+    box-sizing: border-box;
+    padding: 5px;
+    background-color: rgb(59, 151, 255);
+    font-family: var(--font-viga);
+    border-radius: 2px;
+    color: white;
+}
+
+
+/* post end */
+
+.tampil_post {
+    width: 100%;
+    margin-top: 20px;
+    background: whitesmoke;
+}
+
+.user_post {
+    padding: 0 5px;
+    font-family: var(--font-viga);
+    display: flex;
+    align-items: center;
+    height: 60px;
+    background: rgb(255, 255, 255);
+}
+
+.user_post img {
+    width: 35px;
+    border: 1px solid rgb(238, 238, 238);
+    border-radius: 50%;
+}
+
+.user_post span {
+    margin-left: 8px;
+}
+
+.post_status {
+    font-family: var(--font-syne);
+    padding: 10px;
+    font-size: 14px;
+    background: white;
+}
+
+.comment {
+    height: 40px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: rgb(201, 200, 200);
+}
+
+.status_picture img {
+    width: 100%;
+    height: 350px;
+    min-height: 200px;
+    max-height: 350px;
+}

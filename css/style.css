@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Overpass:wght@600&family=PT+Sans&family=Syne&family=Viga&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --font-pt_sans: 'PT Sans', sans-serif;
+    --font-overpass: 'Overpass', sans-serif;
+    --font-syne: 'Syne', sans-serif;
+    --font-abel: 'Abel', sans-serif;
+    --font-viga: 'Viga', sans-serif;
+}
